@@ -12,6 +12,25 @@
         android:text="Did you know?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/"/>
+        android:id="@+id/didYouKnowTextView"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Octopuses have three hearts. Two pump blood through each of the two gills, while the third pumps blood through the body."
+        android:id="@+id/factTextView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show a New Fact"
+        android:id="@+id/showFactButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
