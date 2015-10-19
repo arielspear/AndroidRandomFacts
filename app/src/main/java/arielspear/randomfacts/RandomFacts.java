@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 
+import java.util.Random;
+
 public class RandomFacts extends AppCompatActivity {
 
     @Override
@@ -15,13 +17,20 @@ public class RandomFacts extends AppCompatActivity {
         setContentView(R.layout.activity_random_facts);
 
         // Declare our View variables and assign them the Views from the layout file
-        TextView factLable = (TextView) findViewById(R.id.factTextView);
+        final TextView factLabel = (TextView) findViewById(R.id.factTextView);
         Button showFactButton = (Button) findViewById(R.id.showFactButton);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // On button click, update fact lable with new fact
+                String fact = "";
+                //Randomly select fact
+                Random randomGenerator = new Random();
+                int randomNumber = randomGenerator.nextInt(3);
+                //Update the lable with new fact
+                fact = randomNumber + "";
+                factLabel.setText(fact);
             }
         };
         showFactButton.setOnClickListener(listener);
