@@ -23,6 +23,12 @@ public class RandomFacts extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String[] facts = {
+                        "Octopuses have three hearts. Two pump blood through each of the two gills, while the third pumps blood through the body.",
+                        "An octopus can lose an arm to escape a predator's grasp and re-grow it later with no permanent damage.",
+                        "Octopuses have 240 suckers on each of their 8 tentacles. 1920 in total.",
+
+                };
                 // On button click, update fact lable with new fact
                 String fact = "";
                 //Randomly select fact
